@@ -2,18 +2,22 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #f0f0f0;
-    height: 100vh; /* Full höjd för att centrera vertikalt */
+    height: 100vh;
     display: flex;
-    justify-content: center; /* Centrera horisontellt */
-    align-items: center; /* Centrera vertikalt */
-    margin: 0; /* Ta bort standardmarginaler */
+    flex-direction: column; /* För att stapla element vertikalt */
+    justify-content: center; /* Centrera innehållet */
+    align-items: center;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px; /* Lite utrymme under rubriken */
 }
 
 .game-container {
     display: grid;
-    grid-template-columns: repeat(6, 100px);
+    grid-template-columns: repeat(4, 100px); /* 4 kolumner */
     gap: 10px;
-    margin: 20px; /* Marginal för lite utrymme runt spelplanen */
 }
 
 .card {
@@ -45,8 +49,8 @@ body {
 }
 
 button {
-    margin-top: 20px; /* Lite utrymme ovanför knappen */
-    padding: 10px 20px; /* Padding för knappen */
-    font-size: 16px; /* Större text för knappen */
-    cursor: pointer; /* Pekare vid hover */
+    margin-top: 20px; /* Utrymme ovanför knappen */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }
