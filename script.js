@@ -25,7 +25,7 @@ function createBoard() {
         card.dataset.animal = animal;
 
         const img = document.createElement('img');
-        img.src = `images/${animal}.png`; // Se till att bilderna finns i en mapp som heter 'images'
+        img.src = `${animal}.png`; // Se till att bilderna finns i en mapp som heter 'images'
         img.alt = animal;
 
         card.appendChild(img);
